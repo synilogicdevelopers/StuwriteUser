@@ -276,22 +276,22 @@ class _LoginScreenState extends State<LoginScreen> {
                                       ]),
                                     ),
 
-                                    InkWell(
-                                      onTap: () {
-                                        RouterHelper.getForgetPasswordScreenRoute();
-                                      },
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          localizationProvider.isLtr ? "${getTranslated('forget_password', context)!}?"
-                                              : "${getTranslated('forget_password', context)!}؟",
-                                          style: Theme.of(context).textTheme.displayMedium!.copyWith(
-                                            fontSize: Dimensions.fontSizeSmall,
-                                            color: Theme.of(context).primaryColor,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
+                                    // InkWell(
+                                    //   onTap: () {
+                                    //     RouterHelper.getForgetPasswordScreenRoute();
+                                    //   },
+                                    //   child: Padding(
+                                    //     padding: const EdgeInsets.all(8.0),
+                                    //     child: Text(
+                                    //       localizationProvider.isLtr ? "${getTranslated('forget_password', context)!}?"
+                                    //           : "${getTranslated('forget_password', context)!}؟",
+                                    //       style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                                    //         fontSize: Dimensions.fontSizeSmall,
+                                    //         color: Theme.of(context).primaryColor,
+                                    //       ),
+                                    //     ),
+                                    //   ),
+                                    // ),
 
                                   ]),
 
