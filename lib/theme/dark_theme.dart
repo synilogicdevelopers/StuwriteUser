@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
 
-Color _primaryColor = const Color(0xFF1455AC);
-Color _secondaryColor = const Color(0xFFF58300);
+Color _primaryColor = ColorResources.colorPrimary;
+Color _secondaryColor = ColorResources.colorPrimaryVariant;
 
 ThemeData dark = ThemeData(
   fontFamily: 'TitilliumWeb',
@@ -26,9 +27,9 @@ ThemeData dark = ThemeData(
     tertiary: const Color(0xFFFFBB38), // Warning Color
     tertiaryContainer: const Color(0xFF6C7A8E),
     surface: const Color(0xFF2D2D2D),
-    onPrimary: const Color(0xFFB7D7FE),
+    onPrimary: ColorResources.colorPrimaryLight,
     onTertiaryContainer: const Color(0xFF04BB7B), // Success Color
-    primaryContainer: const Color(0xFF208458),
+    primaryContainer: ColorResources.colorPrimaryMedium,
     onSecondaryContainer: const Color(0x912A2A2A),
     outline: const Color(0xff5C8FFC), // Info Color
     onTertiary: const Color(0xFF545252),
