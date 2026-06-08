@@ -119,7 +119,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
             ' ${Provider.of<ProfileController>(context, listen: false).userInfoModel!.lName ?? ''}';
 
         String countryCode = CountryCodeHelper.getCountryCode(Provider.of<ProfileController>(context, listen: false).userInfoModel!.phone ?? '')!;
-        Provider.of<AuthController>(context, listen: false).setCountryCode(countryCode);
+        Provider.of<AuthController>(context, listen: false).setCountryCode(countryCode, notify: false);
         String phoneNumberOnly = CountryCodeHelper.extractPhoneNumber(countryCode, Provider.of<ProfileController>(context, listen: false).userInfoModel!.phone ?? '');
         _contactPersonNumberController.text = phoneNumberOnly;
       }
