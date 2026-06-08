@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_sixvalley_ecommerce/data/local/cache_response.dart';
 import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/facebook_login_controller.dart';
@@ -354,6 +355,7 @@ class _MyAppState extends State<MyApp> {
               locale: Provider.of<LocalizationController>(context).locale,
               localizationsDelegates: [
                 AppLocalization.delegate,
+                CountryLocalizations.getDelegate(enableLocalization: false),
                 GlobalMaterialLocalizations.delegate,
                 GlobalWidgetsLocalizations.delegate,
                 GlobalCupertinoLocalizations.delegate,

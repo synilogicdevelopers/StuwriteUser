@@ -64,8 +64,15 @@ class _MoreScreenState extends State<MoreScreen> {
           child: Consumer<AuthController>(
             builder: (ctx, authController, _) {
               return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Padding(padding: EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
-                    child: Center(child: MoreHorizontalSection())),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      8,
+                      8,
+                      8,
+                      0,
+                    ),
+                    child: MoreHorizontalSection(),
+                  ),
 
                   Padding(padding: const EdgeInsets.fromLTRB( Dimensions.paddingSizeDefault,
                       Dimensions.paddingSizeDefault,  Dimensions.paddingSizeDefault,0),

@@ -18,11 +18,18 @@ class SquareButtonWidget extends StatelessWidget {
   final bool isLoyalty;
   final String? subTitle;
   final Function? onTap;
+  final double? boxWidth;
+  final double? boxHeight;
+  final EdgeInsetsGeometry boxPadding;
 
   const SquareButtonWidget({super.key, required this.image,
     required this.title, this.navigateTo, required this.count,
     required this.hasCount, this.isWallet = false, this.balance, this.subTitle,
-    this.isLoyalty = false, this.onTap});
+    this.isLoyalty = false, this.onTap,
+    this.boxWidth,
+    this.boxHeight,
+    this.boxPadding = const EdgeInsets.all(8.0),
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +37,15 @@ class SquareButtonWidget extends StatelessWidget {
       onTap: () {
         onTap!();
       },
-      child: Column(children: [
-        Padding(padding: const EdgeInsets.all(8.0),
-          child: Container(width: 120, height: 90,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+        Padding(
+          padding: boxPadding,
+          child: Container(
+            width: boxWidth ?? 120,
+            height: boxHeight ?? 90,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
                 color: Provider.of<ThemeController>(context).darkTheme ?
                 Theme.of(context).primaryColor.withValues(alpha:.30) : Theme.of(context).primaryColor),
@@ -69,9 +82,22 @@ class SquareButtonWidget extends StatelessWidget {
                 })):const SizedBox(),
             ])),
         ),
-        Text(title??'', maxLines: 1,overflow: TextOverflow.clip,
-            style: titilliumRegular.copyWith(fontSize: Dimensions.fontSizeDefault,
-                color: Theme.of(context).textTheme.bodyLarge?.color)),
+        SizedBox(
+          height: 16,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              title ?? '',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: titilliumRegular.copyWith(
+                fontSize: Dimensions.fontSizeDefault,
+                color: Theme.of(context).textTheme.bodyLarge?.color,
+              ),
+            ),
+          ),
+        ),
       ]),
     );
   }

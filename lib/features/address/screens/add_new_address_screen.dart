@@ -75,7 +75,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
     }
 
     Provider.of<AuthController>(context, listen: false).setCountryCode(CountryCode.fromCountryCode(Provider.of<SplashController>(context, listen: false).configModel!.countryCode!).dialCode!, notify: false);
-    _countryCodeController.text = CountryCode.fromCountryCode(Provider.of<SplashController>(context, listen: false).configModel!.countryCode!).name??'Bangladesh';
+    _countryCodeController.text = '';
     Provider.of<AddressController>(context, listen: false).getAddressType();
     Provider.of<AddressController>(context, listen: false).getRestrictedDeliveryCountryList();
     Provider.of<AddressController>(context, listen: false).getRestrictedDeliveryZipList();
@@ -93,7 +93,10 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
             double.parse(widget.address!.longitude!) : _defaut.longitude,
           )), true, widget.address!.address, context);
       _contactPersonNameController.text = '${widget.address?.contactPersonName}';
-      _countryCodeController.text = '${widget.address?.country}';
+      final savedCountry = '${widget.address?.country}';
+      _countryCodeController.text = CountryCodeHelper.resolveCountryIso(savedCountry) == null
+          ? savedCountry
+          : '';
       _contactPersonEmailController.text =  '${widget.address?.email}';
       // _contactPersonNumberController.text = '${widget.address?.phone}';
       _cityController.text = '${widget.address?.city}';
@@ -396,10 +399,19 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                                             fromCountryList: true,
                                             padding: const EdgeInsets.only(left: Dimensions.paddingSizeSmall),
                                             flagWidth: 25,
+                                            onInit: (country) {
+                                              if (country?.name != null) {
+                                                _countryCodeController.text = country!.name!;
+                                              }
+                                            },
                                             onChanged: (val){
                                               _countryCodeController.text = val.name!;
                                             },
-                                            initialSelection: _countryCodeController.text,
+                                            initialSelection: widget.isEnableUpdate
+                                                ? (CountryCodeHelper.resolveCountryIso(widget.address?.country)
+                                                    ?? widget.address?.country
+                                                    ?? Provider.of<SplashController>(context, listen: false).configModel!.countryCode!)
+                                                : Provider.of<SplashController>(context, listen: false).configModel!.countryCode!,
                                             showDropDownButton: true,
                                             showCountryOnly: true,
                                             showOnlyCountryWhenClosed: true,

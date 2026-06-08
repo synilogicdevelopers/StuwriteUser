@@ -85,7 +85,7 @@ class DashBoardScreenState extends State<DashBoardScreen> {
         NavigationModel(name: 'inbox', icon: Images.messageImage, screen: InboxScreen(fromDashboard: true)),
         NavigationModel(name: 'cart', icon: Images.cartArrowDownImage, screen: const CartScreen(showBackButton: false, fromDashboard: true), showCartIcon: true),
         NavigationModel(name: 'orders', icon: Images.shoppingImage, screen:  const OrderScreen(isBacButtonExist: false, fromDashboard: true)),
-        NavigationModel(name: 'more', icon: Images.moreImage, screen:  const MoreScreen()),
+        NavigationModel(name: 'accounts', icon: Images.moreImage, screen:  const MoreScreen()),
       ];
 
 

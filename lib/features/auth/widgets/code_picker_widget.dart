@@ -224,6 +224,15 @@ class CodePickerWidgetState extends State<CodePickerWidget> {
     super.didChangeDependencies();
 
     elements = elements.map((element) => element.localize(context)).toList();
+    if (widget.initialSelection != null) {
+      selectedItem = elements.firstWhere(
+        (item) =>
+            (item.code!.toUpperCase() == widget.initialSelection!.toUpperCase()) ||
+            (item.dialCode == widget.initialSelection) ||
+            (item.name!.toUpperCase() == widget.initialSelection!.toUpperCase()),
+        orElse: () => selectedItem ?? elements[0],
+      );
+    }
     _onInit(selectedItem);
   }
 
