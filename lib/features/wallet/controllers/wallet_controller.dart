@@ -4,10 +4,14 @@ import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/models/wallet
 import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/models/wallet_bonus_model.dart';
 import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/services/wallet_service_interface.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/digital_payment_launcher.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/payment_redirect_helper.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
 import 'package:flutter_sixvalley_ecommerce/main.dart';
 import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
+
+import '../../../helper/route_healper.dart';
 
 class WalletController extends ChangeNotifier {
   final WalletServiceInterface walletServiceInterface;
@@ -97,9 +101,12 @@ class WalletController extends ChangeNotifier {
     if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
       _isConvert = false;
 
-      RouterHelper.getAddFundToWalletRoute(
+      await DigitalPaymentLauncher.launch(
+        context: Get.context!,
+        redirectLink: apiResponse.response?.data['redirect_link'] ?? '',
+        flowType: PaymentFlowType.wallet,
         action: RouteAction.push,
-        url: apiResponse.response?.data['redirect_link']
+        fromWallet: true,
       );
 
     }else if (apiResponse.response?.statusCode == 202){

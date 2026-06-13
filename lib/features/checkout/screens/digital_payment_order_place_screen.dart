@@ -1,15 +1,20 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_android/webview_flutter_android.dart';
+import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/checkout/controllers/checkout_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/checkout/widgets/order_place_bottomsheet_widget.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/upi_intent_helper.dart';
 import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
 import 'package:flutter_sixvalley_ecommerce/main.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
 import 'package:flutter_sixvalley_ecommerce/common/basewidget/animated_custom_dialog_widget.dart';
+import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:flutter_sixvalley_ecommerce/features/checkout/widgets/order_place_dialog_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -30,13 +35,6 @@ class DigitalPaymentScreenState extends State<DigitalPaymentScreen> {
   bool _isInitialized = false;
 
   @override
-  void initState() {
-    super.initState();
-
-    controller = WebViewController();
-  }
-
-  @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     if (!_isInitialized) {
@@ -46,7 +44,17 @@ class DigitalPaymentScreenState extends State<DigitalPaymentScreen> {
   }
 
   void _initWebViewController() {
-    controller
+    late final PlatformWebViewControllerCreationParams params;
+    if (WebViewPlatform.instance is WebKitWebViewPlatform) {
+      params = WebKitWebViewControllerCreationParams(
+        allowsInlineMediaPlayback: true,
+        mediaTypesRequiringUserAction: const <PlaybackMediaTypes>{},
+      );
+    } else {
+      params = const PlatformWebViewControllerCreationParams();
+    }
+
+    final webViewController = WebViewController.fromPlatformCreationParams(params)
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(Theme.of(context).cardColor)
       ..setNavigationDelegate(
@@ -66,11 +74,40 @@ class DigitalPaymentScreenState extends State<DigitalPaymentScreen> {
               _checkRedirect(request.url);
               return NavigationDecision.prevent;
             }
-            return NavigationDecision.navigate;
+            return _handleUpiNavigationRequest(request.url);
           },
         ),
       )
       ..loadRequest(Uri.parse(widget.url));
+
+    if (webViewController.platform is AndroidWebViewController) {
+      if (kDebugMode) {
+        AndroidWebViewController.enableDebugging(true);
+      }
+      (webViewController.platform as AndroidWebViewController)
+          .setMediaPlaybackRequiresUserGesture(false);
+    }
+
+    controller = webViewController;
+  }
+
+  NavigationDecision _handleUpiNavigationRequest(String url) {
+    if (UpiIntentHelper.isUpiIntentUrl(url)) {
+      _launchUpiIntent(url);
+      return NavigationDecision.prevent;
+    }
+    return NavigationDecision.navigate;
+  }
+
+  Future<void> _launchUpiIntent(String url) async {
+    final launched = await UpiIntentHelper.launchUpiIntent(url);
+    if (!launched && mounted) {
+      showCustomSnackBarWidget(
+        'UPI supported applications not found',
+        context,
+        snackBarType: SnackBarType.warning,
+      );
+    }
   }
 
   bool _isRedirectUrl(String url) {

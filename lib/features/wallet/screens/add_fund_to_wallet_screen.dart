@@ -3,10 +3,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_sixvalley_ecommerce/features/wallet/controllers/wallet_controller.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/upi_intent_helper.dart';
 import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
 import 'package:flutter_sixvalley_ecommerce/main.dart';
 import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
 import 'package:flutter_sixvalley_ecommerce/common/basewidget/animated_custom_dialog_widget.dart';
+import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:flutter_sixvalley_ecommerce/features/checkout/widgets/order_place_dialog_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -37,7 +39,13 @@ class PaymentScreenState extends State<AddFundToWalletScreen> {
 
     final settings = InAppBrowserClassSettings(
       browserSettings: InAppBrowserSettings(hideUrlBar: false, hideToolbarTop: false),
-      webViewSettings: InAppWebViewSettings(javaScriptEnabled: true, isInspectable: kDebugMode, useShouldOverrideUrlLoading: false, useOnLoadResource: false),
+      webViewSettings: InAppWebViewSettings(
+        javaScriptEnabled: true,
+        isInspectable: kDebugMode,
+        useShouldOverrideUrlLoading: true,
+        useOnLoadResource: false,
+        userAgent: UpiIntentHelper.mobileUserAgent,
+      ),
     );
 
 
@@ -137,6 +145,18 @@ class MyInAppBrowser extends InAppBrowser {
 
   @override
   Future<NavigationActionPolicy> shouldOverrideUrlLoading(navigationAction) async {
+    final url = navigationAction.request.url?.toString() ?? '';
+    if (UpiIntentHelper.isUpiIntentUrl(url)) {
+      final launched = await UpiIntentHelper.launchUpiIntent(url);
+      if (!launched && context.mounted) {
+        showCustomSnackBarWidget(
+          'UPI supported applications not found',
+          context,
+          snackBarType: SnackBarType.warning,
+        );
+      }
+      return NavigationActionPolicy.CANCEL;
+    }
     return NavigationActionPolicy.ALLOW;
   }
 

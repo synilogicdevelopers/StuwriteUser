@@ -90,6 +90,7 @@ import 'package:flutter_sixvalley_ecommerce/features/order/domain/repositories/o
 import 'package:flutter_sixvalley_ecommerce/features/order/domain/services/order_service.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order/domain/services/order_service_interface.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order_details/controllers/order_details_controller.dart';
+import 'package:flutter_sixvalley_ecommerce/features/payment/controllers/razorpay_payment_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/repositories/order_details_repository.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/repositories/order_details_repository_interface.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/services/order_details_service.dart';
@@ -280,6 +281,7 @@ Future<void> init() async {
   sl.registerFactory(() => RefundController(refundServiceInterface: sl()));
   sl.registerFactory(() => ReOrderController(reOrderServiceInterface: sl()));
   sl.registerFactory(() => RestockController(restockServiceInterface: sl()));
+  sl.registerFactory(() => RazorpayPaymentController());
 
   //interface
   AddressRepoInterface addressRepoInterface = AddressRepository(dioClient: sl());

@@ -26,6 +26,7 @@ import 'package:flutter_sixvalley_ecommerce/features/notification/controllers/no
 import 'package:flutter_sixvalley_ecommerce/features/onboarding/controllers/onboarding_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order/controllers/order_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/order_details/controllers/order_details_controller.dart';
+import 'package:flutter_sixvalley_ecommerce/features/payment/controllers/razorpay_payment_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product/controllers/product_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product/controllers/seller_product_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/product_details/controllers/product_details_controller.dart';
@@ -222,6 +223,7 @@ Future<void> main() async {
         ChangeNotifierProvider(create: (context) => di.sl<ReviewController>()),
         ChangeNotifierProvider(create: (context) => di.sl<SellerProductController>()),
         ChangeNotifierProvider(create: (context) => di.sl<RestockController>()),
+        ChangeNotifierProvider(create: (context) => di.sl<RazorpayPaymentController>()),
       ],
       child: MyApp(body: body, route: path),
     ));

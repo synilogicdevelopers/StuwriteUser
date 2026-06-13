@@ -29,6 +29,30 @@
             <data android:mimeType="*/*" />
         </intent>
         <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+
+        <!-- Required for Razorpay UPI app discovery on Android 11+ -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="upi" android:host="pay"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+
+        <!-- Known UPI apps -->
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="in.org.npci.upiapp"/>
     </queries>
 
     <application

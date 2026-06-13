@@ -11,6 +11,8 @@ import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/servic
 import 'package:flutter_sixvalley_ecommerce/features/review/controllers/review_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/digital_payment_launcher.dart';
+import 'package:flutter_sixvalley_ecommerce/helper/payment_redirect_helper.dart';
 import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
 import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
 import 'package:flutter_sixvalley_ecommerce/main.dart';
@@ -493,9 +495,10 @@ class OrderDetailsController with ChangeNotifier {
     );
     if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
 
-      RouterHelper.getDigitalPaymentScreenRoute(
-        url: apiResponse.response?.data['redirect_link'] ?? '',
-        fromWallet: false,
+      await DigitalPaymentLauncher.launch(
+        context: Get.context!,
+        redirectLink: apiResponse.response?.data['redirect_link'] ?? '',
+        flowType: PaymentFlowType.duePayment,
         orderId: orderId.toString(),
         action: RouteAction.pushReplacement,
       );
