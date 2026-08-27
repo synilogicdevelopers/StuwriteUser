@@ -186,7 +186,6 @@ class Images {
   static const String appleLogo = 'assets/images/apple_logo.png';
   static const String userSvg = 'assets/svg/user.svg';
   static const String mailIconSvg = 'assets/svg/mail_icon.svg';
-  static const String logoSvg = 'assets/svg/6valley_logo.svg';
   static const String mailOtpSvg = 'assets/svg/mail_otp.svg';
   static const String phoneOtpSvg = 'assets/svg/phone_otp.svg';
   static const String previewEyeIcon = 'assets/images/preview_eye_icon.png';

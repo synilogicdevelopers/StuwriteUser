@@ -5,7 +5,7 @@ import 'package:stuwrite_user/common/enums/local_caches_type_enum.dart';
   class AppConstants {
   static const String appName = 'StuWrite';
   static const String slogan = 'E-Commerce Marketplace';
-  static const String appVersion = '16.1'; ///Flutter SDK 3.41.1
+  static const String appVersion = '1.0.1'; ///Flutter SDK 3.41.1
   static const bool demo = false;
   static const int imageQuality = 100;
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
@@ -225,7 +225,7 @@ import 'package:stuwrite_user/common/enums/local_caches_type_enum.dart';
   static const String countryCode = 'country_code';
   static const String languageCode = 'language_code';
   static const String theme = 'theme';
-  static const String topic = 'sixvalley';
+  static const String topic = 'stuwrite';
   static const String demoTopic = 'demo_reset';
   static const String userAddress = 'user_address';
 
