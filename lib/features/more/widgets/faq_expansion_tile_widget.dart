@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/more/widgets/custom_expansion_tile.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:stuwrite_user/features/more/widgets/custom_expansion_tile.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
 
 class FaqExpansionTileWidget extends StatefulWidget {
   final int index;

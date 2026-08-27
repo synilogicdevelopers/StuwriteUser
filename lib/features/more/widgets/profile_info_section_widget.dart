@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/controllers/profile_contrroller.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/not_logged_in_bottom_sheet_widget.dart';
+import 'package:stuwrite_user/features/auth/controllers/auth_controller.dart';
+import 'package:stuwrite_user/features/profile/controllers/profile_contrroller.dart';
+import 'package:stuwrite_user/theme/controllers/theme_controller.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/custom_image_widget.dart';
+import 'package:stuwrite_user/common/basewidget/not_logged_in_bottom_sheet_widget.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
 
 class ProfileInfoSectionWidget extends StatelessWidget {
   const ProfileInfoSectionWidget({super.key});

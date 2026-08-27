@@ -1,16 +1,16 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/clearance_sale/widgets/clearance_sale_shop_list_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/controllers/seller_product_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/shop_navigation_model.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/coupon/controllers/coupon_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/title_row_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/widgets/shop_coupon_item_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/widgets/shop_featured_product_list_view.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/widgets/shop_recommanded_product_list.dart';
+import 'package:stuwrite_user/features/clearance_sale/widgets/clearance_sale_shop_list_widget.dart';
+import 'package:stuwrite_user/features/product/controllers/seller_product_controller.dart';
+import 'package:stuwrite_user/features/shop/domain/models/shop_navigation_model.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/features/coupon/controllers/coupon_controller.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/common/basewidget/title_row_widget.dart';
+import 'package:stuwrite_user/features/shop/widgets/shop_coupon_item_widget.dart';
+import 'package:stuwrite_user/features/shop/widgets/shop_featured_product_list_view.dart';
+import 'package:stuwrite_user/features/shop/widgets/shop_recommanded_product_list.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 

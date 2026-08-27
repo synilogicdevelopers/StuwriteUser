@@ -1,18 +1,18 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/checkout/domain/services/checkout_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/offline_payment/domain/models/offline_payment_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/digital_payment_launcher.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/payment_redirect_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/auth/controllers/auth_controller.dart';
+import 'package:stuwrite_user/features/cart/domain/models/cart_model.dart';
+import 'package:stuwrite_user/features/checkout/domain/services/checkout_service_interface.dart';
+import 'package:stuwrite_user/features/offline_payment/domain/models/offline_payment_model.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/helper/digital_payment_launcher.dart';
+import 'package:stuwrite_user/helper/payment_redirect_helper.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/main.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:provider/provider.dart';
 
 

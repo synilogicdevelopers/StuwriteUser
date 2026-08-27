@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_toast.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/common/basewidget/custom_toast.dart';
+import 'package:stuwrite_user/main.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
  void showCustomSnackBar(String? message, BuildContext context, {bool isError = true, bool isToaster = false}) {

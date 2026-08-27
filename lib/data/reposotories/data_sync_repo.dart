@@ -1,16 +1,16 @@
 import 'dart:convert';
 import 'package:drift/drift.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/local_caches_type_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/dio/dio_client.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:flutter_sixvalley_ecommerce/data/local/cache_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/reposotories/data_sync_repo_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/db_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/common/enums/local_caches_type_enum.dart';
+import 'package:stuwrite_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:stuwrite_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:stuwrite_user/data/local/cache_response.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/data/reposotories/data_sync_repo_interface.dart';
+import 'package:stuwrite_user/helper/db_helper.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 

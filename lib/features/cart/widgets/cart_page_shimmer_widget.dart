@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:stuwrite_user/theme/controllers/theme_controller.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 

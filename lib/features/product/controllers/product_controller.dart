@@ -1,16 +1,16 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/domain/models/find_what_you_need.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/home_category_product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/most_demanded_product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/services/product_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/enums/product_type.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/data_sync_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/category/domain/models/find_what_you_need.dart';
+import 'package:stuwrite_user/features/product/domain/models/home_category_product_model.dart';
+import 'package:stuwrite_user/features/product/domain/models/most_demanded_product_model.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/product/domain/services/product_service_interface.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/features/product/enums/product_type.dart';
+import 'package:stuwrite_user/helper/data_sync_helper.dart';
+import 'package:stuwrite_user/main.dart';
 
 class ProductController extends ChangeNotifier {
   final ProductServiceInterface? productServiceInterface;

@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
+import 'package:stuwrite_user/features/cart/domain/models/cart_model.dart';
 
 class CartHelper {
   double calculateVatTax(List<CartModel>? cartList,) {

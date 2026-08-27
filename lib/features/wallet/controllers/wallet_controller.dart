@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/models/wallet_transaction_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/models/wallet_bonus_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wallet/domain/services/wallet_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/digital_payment_launcher.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/payment_redirect_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/wallet/domain/models/wallet_transaction_model.dart';
+import 'package:stuwrite_user/features/wallet/domain/models/wallet_bonus_model.dart';
+import 'package:stuwrite_user/features/wallet/domain/services/wallet_service_interface.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/helper/digital_payment_launcher.dart';
+import 'package:stuwrite_user/helper/payment_redirect_helper.dart';
+import 'package:stuwrite_user/helper/price_converter.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
 
 import '../../../helper/route_healper.dart';
 

@@ -1,7 +1,7 @@
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/domain/repositories/category_repo_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/domain/services/category_service_interface.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/category/domain/repositories/category_repo_interface.dart';
+import 'package:stuwrite_user/features/category/domain/services/category_service_interface.dart';
 
 class CategoryService implements CategoryServiceInterface{
   CategoryRepoInterface categoryRepoInterface;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/models/banner_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/services/banner_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/controllers/shop_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/controllers/brand_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/category/controllers/category_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/data_sync_helper.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/features/banner/domain/models/banner_model.dart';
+import 'package:stuwrite_user/features/banner/domain/services/banner_service_interface.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/shop/controllers/shop_controller.dart';
+import 'package:stuwrite_user/features/brand/controllers/brand_controller.dart';
+import 'package:stuwrite_user/features/category/controllers/category_controller.dart';
+import 'package:stuwrite_user/helper/data_sync_helper.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
 
 class BannerController extends ChangeNotifier {
   final BannerServiceInterface? bannerServiceInterface;

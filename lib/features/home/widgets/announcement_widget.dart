@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/domain/models/config_model.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/features/splash/domain/models/config_model.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 
 import 'marque_text_widget.dart';

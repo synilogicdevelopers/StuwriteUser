@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/models/brand_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/repositories/brand_repository.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/data_sync_helper.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/brand/domain/models/brand_model.dart';
+import 'package:stuwrite_user/features/brand/domain/repositories/brand_repository.dart';
+import 'package:stuwrite_user/helper/data_sync_helper.dart';
 
 
 class BrandController extends ChangeNotifier {

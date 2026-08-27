@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
 
 class CustomToast extends StatelessWidget {
   final String text;

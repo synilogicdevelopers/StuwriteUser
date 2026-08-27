@@ -1,15 +1,15 @@
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/dio/dio_client.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/repositories/cart_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:stuwrite_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:stuwrite_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/cart/domain/models/cart_model.dart';
+import 'package:stuwrite_user/features/cart/domain/repositories/cart_repository_interface.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/features/auth/controllers/auth_controller.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_sixvalley_ecommerce/data/services/data_sync_service.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/services/data_sync_service.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
 
 class CartRepository extends DataSyncService implements CartRepositoryInterface {
   final DioClient dioClient;

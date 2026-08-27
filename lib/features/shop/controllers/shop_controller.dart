@@ -2,18 +2,18 @@ import 'dart:convert';
 
 import 'package:drift/drift.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/local/cache_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/more_store_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/seller_info_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/seller_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/services/shop_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/data_sync_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/local/cache_response.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/shop/domain/models/more_store_model.dart';
+import 'package:stuwrite_user/features/shop/domain/models/seller_info_model.dart';
+import 'package:stuwrite_user/features/shop/domain/models/seller_model.dart';
+import 'package:stuwrite_user/features/shop/domain/services/shop_service_interface.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/helper/data_sync_helper.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
 
 class ShopController extends ChangeNotifier {
   final ShopServiceInterface? shopServiceInterface;

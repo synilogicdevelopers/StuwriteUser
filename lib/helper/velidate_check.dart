@@ -1,6 +1,6 @@
-import 'package:flutter_sixvalley_ecommerce/helper/phone_verification_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/helper/phone_verification_helper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/main.dart';
 
 class ValidateCheck{
   static String? validateEmail(String? value) {

@@ -1,8 +1,8 @@
 
-import 'package:flutter_sixvalley_ecommerce/data/model/image_full_url.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product_details/domain/models/product_details_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/seller_model.dart';
+import 'package:stuwrite_user/data/model/image_full_url.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/product_details/domain/models/product_details_model.dart';
+import 'package:stuwrite_user/features/shop/domain/models/seller_model.dart';
 
 class OrderDetailsModel {
   int? _id;

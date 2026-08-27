@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/enums/vacation_duration_type.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/features/shop/domain/enums/vacation_duration_type.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
 import 'package:provider/provider.dart';
 
 

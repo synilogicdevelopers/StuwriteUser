@@ -1,13 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/clearance_sale/widgets/clearance_sale_card.dart';
-import 'package:flutter_sixvalley_ecommerce/features/clearance_sale/widgets/clearance_title_row_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/controllers/shop_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/shop_navigation_model.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:stuwrite_user/features/clearance_sale/widgets/clearance_sale_card.dart';
+import 'package:stuwrite_user/features/clearance_sale/widgets/clearance_title_row_widget.dart';
+import 'package:stuwrite_user/features/shop/controllers/shop_controller.dart';
+import 'package:stuwrite_user/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
+import 'package:stuwrite_user/features/shop/domain/models/shop_navigation_model.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 
 class ClearanceShopListWidget extends StatelessWidget {

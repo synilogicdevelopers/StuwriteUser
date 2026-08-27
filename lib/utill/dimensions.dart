@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/helper/responsive_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/helper/responsive_helper.dart';
+import 'package:stuwrite_user/main.dart';
 
 class Dimensions {
   static  double fontSizeExtraSmall = Get.context != null && ResponsiveHelper.isTab(Get.context!) ? 14 : 10.0;

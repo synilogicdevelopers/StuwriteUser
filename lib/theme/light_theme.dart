@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
+import 'package:stuwrite_user/utill/color_resources.dart';
 
 Color _primaryColor = ColorResources.colorPrimary;
 Color _secondaryColor = ColorResources.colorPrimaryVariant;

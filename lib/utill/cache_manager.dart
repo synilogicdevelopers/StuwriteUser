@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:drift/drift.dart';
-import 'package:flutter_sixvalley_ecommerce/data/local/cache_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/data/local/cache_response.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/main.dart';
 
 class CacheManager {
 

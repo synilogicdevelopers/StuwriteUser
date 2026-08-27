@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/controllers/order_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order_details/controllers/order_details_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/models/track_order_details_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/tracking/widgets/status_stepper_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_app_bar_widget.dart';
+import 'package:stuwrite_user/features/order/controllers/order_controller.dart';
+import 'package:stuwrite_user/features/order_details/controllers/order_details_controller.dart';
+import 'package:stuwrite_user/features/order_details/domain/models/track_order_details_model.dart';
+import 'package:stuwrite_user/features/tracking/widgets/status_stepper_widget.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/custom_app_bar_widget.dart';
 import 'package:provider/provider.dart';
 
 class TrackingResultScreen extends StatefulWidget {

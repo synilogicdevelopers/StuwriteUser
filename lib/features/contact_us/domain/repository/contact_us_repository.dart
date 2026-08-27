@@ -1,9 +1,9 @@
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/dio/dio_client.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/contact_us/domain/models/contact_us_body.dart';
-import 'package:flutter_sixvalley_ecommerce/features/contact_us/domain/repository/contact_us_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:stuwrite_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:stuwrite_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/contact_us/domain/models/contact_us_body.dart';
+import 'package:stuwrite_user/features/contact_us/domain/repository/contact_us_repository_interface.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
 
 class ContactUsRepository implements ContactUsRepositoryInterface{
   final DioClient? dioClient;

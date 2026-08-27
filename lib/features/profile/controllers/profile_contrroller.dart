@@ -1,13 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/response_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/domain/models/profile_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/domain/services/profile_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/data/model/response_model.dart';
+import 'package:stuwrite_user/features/profile/domain/models/profile_model.dart';
+import 'package:stuwrite_user/features/profile/domain/services/profile_service_interface.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:http/http.dart' as http;
 
 

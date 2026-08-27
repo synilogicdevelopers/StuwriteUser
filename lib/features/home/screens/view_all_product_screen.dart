@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/no_internet_screen_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/paginated_list_view_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/product_shimmer_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/product_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/controllers/product_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/enums/product_type.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/responsive_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_app_bar_widget.dart';
+import 'package:stuwrite_user/common/basewidget/no_internet_screen_widget.dart';
+import 'package:stuwrite_user/common/basewidget/paginated_list_view_widget.dart';
+import 'package:stuwrite_user/common/basewidget/product_shimmer_widget.dart';
+import 'package:stuwrite_user/common/basewidget/product_widget.dart';
+import 'package:stuwrite_user/features/product/controllers/product_controller.dart';
+import 'package:stuwrite_user/features/product/enums/product_type.dart';
+import 'package:stuwrite_user/helper/responsive_helper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/theme/controllers/theme_controller.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/common/basewidget/custom_app_bar_widget.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:provider/provider.dart';
 

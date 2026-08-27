@@ -1,20 +1,20 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_asset_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_button_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_textfield_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/domain/models/signup_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/domain/models/user_log_data.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/enums/from_page.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/number_checker_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/responsive_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/custom_asset_image_widget.dart';
+import 'package:stuwrite_user/common/basewidget/custom_button_widget.dart';
+import 'package:stuwrite_user/common/basewidget/custom_textfield_widget.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/features/auth/controllers/auth_controller.dart';
+import 'package:stuwrite_user/features/auth/domain/models/signup_model.dart';
+import 'package:stuwrite_user/features/auth/domain/models/user_log_data.dart';
+import 'package:stuwrite_user/features/auth/enums/from_page.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/helper/number_checker_helper.dart';
+import 'package:stuwrite_user/helper/responsive_helper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
 import 'package:provider/provider.dart';
 
 class OtpRegistrationScreen extends StatefulWidget {

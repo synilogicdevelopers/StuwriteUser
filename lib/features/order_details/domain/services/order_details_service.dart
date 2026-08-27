@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/repositories/order_details_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order_details/domain/services/order_details_service_interface.dart';
+import 'package:stuwrite_user/features/order_details/domain/repositories/order_details_repository_interface.dart';
+import 'package:stuwrite_user/features/order_details/domain/services/order_details_service_interface.dart';
 
 class OrderDetailsService implements OrderDetailsServiceInterface{
   OrderDetailsRepositoryInterface orderDetailsRepositoryInterface;

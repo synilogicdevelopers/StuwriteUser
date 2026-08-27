@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/slider_product_shimmer_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/controllers/product_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/enums/product_type.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/widgets/latest_product/latest_product_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/title_row_widget.dart';
+import 'package:stuwrite_user/common/basewidget/slider_product_shimmer_widget.dart';
+import 'package:stuwrite_user/features/product/controllers/product_controller.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/product/enums/product_type.dart';
+import 'package:stuwrite_user/features/product/widgets/latest_product/latest_product_widget.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/common/basewidget/title_row_widget.dart';
 import 'package:provider/provider.dart';
 
 

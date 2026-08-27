@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/data/local/cache_response.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/data/local/cache_response.dart';
+import 'package:stuwrite_user/main.dart';
 
 class DbHelper{
   static Future<void> insertOrUpdate({required String id, required CacheResponseCompanion data}) async {

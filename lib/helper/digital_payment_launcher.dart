@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/payment/controllers/razorpay_payment_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/payment/domain/services/razorpay_payment_service.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/payment_redirect_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
+import 'package:stuwrite_user/features/payment/controllers/razorpay_payment_controller.dart';
+import 'package:stuwrite_user/features/payment/domain/services/razorpay_payment_service.dart';
+import 'package:stuwrite_user/helper/payment_redirect_helper.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
 import 'package:provider/provider.dart';
 
 class DigitalPaymentLauncher {

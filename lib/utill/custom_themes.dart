@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
+import 'package:stuwrite_user/theme/controllers/theme_controller.dart';
 import 'package:provider/provider.dart';
 
 const titilliumRegular = TextStyle(

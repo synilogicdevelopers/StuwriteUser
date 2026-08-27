@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_asset_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_directionality_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/discount_tag_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/domain/models/wishlist_model.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/widgets/remove_from_wishlist_bottom_sheet_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
+import 'package:stuwrite_user/common/basewidget/custom_asset_image_widget.dart';
+import 'package:stuwrite_user/common/basewidget/custom_directionality_widget.dart';
+import 'package:stuwrite_user/common/basewidget/custom_image_widget.dart';
+import 'package:stuwrite_user/common/basewidget/discount_tag_widget.dart';
+import 'package:stuwrite_user/features/wishlist/domain/models/wishlist_model.dart';
+import 'package:stuwrite_user/helper/price_converter.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
+import 'package:stuwrite_user/features/wishlist/widgets/remove_from_wishlist_bottom_sheet_widget.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
 
 class WishListWidget extends StatelessWidget {
   final WishlistModel? wishlistModel;

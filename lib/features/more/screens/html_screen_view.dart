@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/domain/models/business_pages_model.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_app_bar_widget.dart';
+import 'package:stuwrite_user/common/basewidget/custom_image_widget.dart';
+import 'package:stuwrite_user/features/splash/domain/models/business_pages_model.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/common/basewidget/custom_app_bar_widget.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:url_launcher/url_launcher.dart';
 

@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_asset_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order/domain/models/order_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order_details/widgets/cancel_order_dialog_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/controllers/profile_contrroller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/reorder/controllers/re_order_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_button_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/custom_asset_image_widget.dart';
+import 'package:stuwrite_user/features/order/domain/models/order_model.dart';
+import 'package:stuwrite_user/features/order_details/widgets/cancel_order_dialog_widget.dart';
+import 'package:stuwrite_user/features/profile/controllers/profile_contrroller.dart';
+import 'package:stuwrite_user/features/reorder/controllers/re_order_controller.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/features/auth/controllers/auth_controller.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/common/basewidget/custom_button_widget.dart';
+import 'package:stuwrite_user/utill/images.dart';
 import 'package:provider/provider.dart';
 
 class CancelAndSupportWidget extends StatelessWidget {

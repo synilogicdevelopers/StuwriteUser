@@ -1,10 +1,10 @@
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/dio/dio_client.dart';
-import 'package:flutter_sixvalley_ecommerce/data/datasource/remote/exception/api_error_handler.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/data/services/data_sync_service.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/repositories/shop_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/datasource/remote/dio/dio_client.dart';
+import 'package:stuwrite_user/data/datasource/remote/exception/api_error_handler.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/data/services/data_sync_service.dart';
+import 'package:stuwrite_user/features/shop/domain/repositories/shop_repository_interface.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
 
 class ShopRepository extends DataSyncService implements ShopRepositoryInterface {
   final DioClient dioClient;

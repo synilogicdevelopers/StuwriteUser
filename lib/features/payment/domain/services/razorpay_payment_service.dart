@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter_sixvalley_ecommerce/features/payment/domain/models/razorpay_checkout_config.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:stuwrite_user/features/payment/domain/models/razorpay_checkout_config.dart';
+import 'package:stuwrite_user/utill/app_constants.dart';
 import 'package:http/http.dart' as http;
 
 class RazorpayPaymentService {

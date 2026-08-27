@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/features/shipping/domain/models/shipping_method_model.dart';
+import 'package:stuwrite_user/features/shipping/domain/models/shipping_method_model.dart';
 
 class ShippingModel{
   int? shippingIndex;

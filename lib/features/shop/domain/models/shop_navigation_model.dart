@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/enums/vacation_duration_type.dart';
+import 'package:stuwrite_user/features/shop/domain/enums/vacation_duration_type.dart';
 
 class SellerNavigationModel {
   final String? slug;

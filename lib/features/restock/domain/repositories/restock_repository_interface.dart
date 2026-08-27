@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/interface/repo_interface.dart';
+import 'package:stuwrite_user/interface/repo_interface.dart';
 
 abstract class RestockRepositoryInterface<T> extends RepositoryInterface{
 

@@ -1,7 +1,7 @@
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/cart/domain/models/cart_model.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
 
 abstract class CartServiceInterface{
 

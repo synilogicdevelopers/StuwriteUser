@@ -1,13 +1,13 @@
 import 'dart:developer';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/models/cart_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/repositories/cart_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/domain/services/cart_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product/domain/models/product_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shipping/controllers/shipping_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/cart/domain/models/cart_model.dart';
+import 'package:stuwrite_user/features/cart/domain/repositories/cart_repository_interface.dart';
+import 'package:stuwrite_user/features/cart/domain/services/cart_service_interface.dart';
+import 'package:stuwrite_user/features/product/domain/models/product_model.dart';
+import 'package:stuwrite_user/features/shipping/controllers/shipping_controller.dart';
+import 'package:stuwrite_user/features/splash/controllers/splash_controller.dart';
+import 'package:stuwrite_user/main.dart';
 import 'package:provider/provider.dart';
 
 class CartService implements CartServiceInterface{

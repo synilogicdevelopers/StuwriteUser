@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/clearance_sale/widgets/clearance_custom_textfield_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/clearance_sale/widgets/clearance_sale_filter_dialog_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/search_product/controllers/search_product_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/search_product/domain/models/author_model.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:stuwrite_user/features/clearance_sale/widgets/clearance_custom_textfield_widget.dart';
+import 'package:stuwrite_user/features/clearance_sale/widgets/clearance_sale_filter_dialog_widget.dart';
+import 'package:stuwrite_user/features/search_product/controllers/search_product_controller.dart';
+import 'package:stuwrite_user/features/search_product/domain/models/author_model.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/theme/controllers/theme_controller.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
 import 'package:provider/provider.dart';
 
 

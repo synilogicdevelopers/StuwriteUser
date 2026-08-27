@@ -1,14 +1,14 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/review/domain/models/review_model.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/date_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/image_diaglog_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/rating_bar_widget.dart';
+import 'package:stuwrite_user/features/review/domain/models/review_model.dart';
+import 'package:stuwrite_user/helper/date_converter.dart';
+import 'package:stuwrite_user/localization/language_constrants.dart';
+import 'package:stuwrite_user/main.dart';
+import 'package:stuwrite_user/utill/custom_themes.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/images.dart';
+import 'package:stuwrite_user/common/basewidget/image_diaglog_widget.dart';
+import 'package:stuwrite_user/common/basewidget/rating_bar_widget.dart';
 import 'package:readmore/readmore.dart';
 import 'package:shimmer/shimmer.dart';
 

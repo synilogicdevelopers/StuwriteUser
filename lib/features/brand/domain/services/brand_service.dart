@@ -1,6 +1,6 @@
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/repositories/brand_repo_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/brand/domain/services/brand_service_interface.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/features/brand/domain/repositories/brand_repo_interface.dart';
+import 'package:stuwrite_user/features/brand/domain/services/brand_service_interface.dart';
 
 class BrandService implements BrandServiceInterface {
   BrandRepoInterface brandRepoInterface;

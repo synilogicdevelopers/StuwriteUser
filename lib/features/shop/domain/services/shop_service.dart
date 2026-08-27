@@ -1,7 +1,7 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/repositories/shop_repository_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/services/shop_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/common/enums/data_source_enum.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/shop/domain/repositories/shop_repository_interface.dart';
+import 'package:stuwrite_user/features/shop/domain/services/shop_service_interface.dart';
+import 'package:stuwrite_user/common/enums/data_source_enum.dart';
 
 class ShopService implements ShopServiceInterface {
   final ShopRepositoryInterface shopRepositoryInterface;

@@ -1,12 +1,12 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/features/cart/controllers/cart_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/reorder/domain/services/re_order_service_interface.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/api_checker.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/route_healper.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:stuwrite_user/data/model/api_response.dart';
+import 'package:stuwrite_user/features/cart/controllers/cart_controller.dart';
+import 'package:stuwrite_user/features/reorder/domain/services/re_order_service_interface.dart';
+import 'package:stuwrite_user/helper/api_checker.dart';
+import 'package:stuwrite_user/helper/route_healper.dart';
+import 'package:stuwrite_user/main.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:stuwrite_user/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:provider/provider.dart';
 
 

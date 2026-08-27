@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/controllers/banner_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/banner/domain/models/banner_model.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_image_widget.dart';
+import 'package:stuwrite_user/features/banner/controllers/banner_controller.dart';
+import 'package:stuwrite_user/features/banner/domain/models/banner_model.dart';
+import 'package:stuwrite_user/common/basewidget/custom_image_widget.dart';
 import 'package:provider/provider.dart';
 
 

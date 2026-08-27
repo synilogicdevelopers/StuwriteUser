@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:stuwrite_user/utill/dimensions.dart';
 import 'package:shimmer/shimmer.dart';
 
 class NotificationShimmerWidget extends StatelessWidget {
