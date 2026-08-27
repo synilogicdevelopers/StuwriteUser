@@ -14,7 +14,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>7WSYLQ8Y87.com.sixamtech.sixValley</string>
+		<string>$(AppIdentifierPrefix)com.stuwrite.user</string>
 	</array>
 </dict>
 </plist>
