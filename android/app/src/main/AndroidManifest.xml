@@ -67,7 +67,7 @@
         android:allowBackup="false"
         android:fullBackupContent="false">
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_MAP_KEY_HERE" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCV7vSdp699utV2n3AtUvQIrtO-TSWksBo" />
 
         <activity
             android:name=".MainActivity"
@@ -106,11 +106,10 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data android:scheme="https"/>
-                <data android:scheme="http"/>
-                <data android:host="YOUR_DOMAIN_HERE"/>
+                <data android:host="stuwrite.com"/>
+                <data android:host="www.stuwrite.com"/>
 
-                <data android:pathPattern="/" />
-                <data android:pathPattern="" />
+                <data android:path="/" />
 
                 <data android:pathPrefix="/track-order" />
                 <data android:pathPrefix="/referral-login" />
